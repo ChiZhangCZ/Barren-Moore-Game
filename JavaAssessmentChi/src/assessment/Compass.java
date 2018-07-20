@@ -1,35 +1,17 @@
 package assessment;
 
-import java.util.Random;
-
 public class Compass {
 	
 	private String direction;
+	private int distance;
+	
+	
 	
 	public Compass() {
-		Random rand = new Random();
-		int  randDirection = rand.nextInt(4) + 1;
 		
-		switch(randDirection) {
-		case 1:
-			this.direction = "North";
-			break;
-			
-		case 2:
-			this.direction = "South";
-			break;
-			
-		case 3:
-			this.direction = "East";
-			break;
-			
-		case 4:
-			this.direction = "West";
-			break;
-		
-		}
-		
-		
+		Treasurelocation treasure1 = new Treasurelocation();
+		this.direction = treasure1.getDirection();
+		this.distance = treasure1.getDistance();
 	}
 
 	public String getDirection() {
@@ -40,5 +22,11 @@ public class Compass {
 		this.direction = direction;
 	}
 
+	public int getDistance() {
+		return distance;
+	}
 
+	public void setDistance(int distance) {
+		this.distance = distance;
+	}
 }

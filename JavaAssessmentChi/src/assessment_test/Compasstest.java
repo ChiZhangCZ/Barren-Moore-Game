@@ -9,13 +9,12 @@ import assessment.Compass;
 public class Compasstest {
 	
 	@Test
-	public void compassTest() {
+	public void compassSetGetTest() {
 		Compass testCompass = new Compass();
-		
-		assertTrue("This compass does not have a valid direction", testCompass.getDirection().equals("North")
-				|| testCompass.getDirection().equals("South")
-				|| testCompass.getDirection().equals("East")
-				||testCompass.getDirection().equals("West"));
+        testCompass.setDirection("North");
+		assertTrue("The compass does not set its direction peroperly", testCompass.getDirection().equals("North"));
+		testCompass.setDistance(40);
+		assertTrue("The compass does not set its distance properly", testCompass.getDistance() == 40);
 	}
 
 }
