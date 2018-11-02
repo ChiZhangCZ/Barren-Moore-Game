@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import assessment.Compass;
 
-public class Compasstest {
+public class CompassTest {
 	
 	@Test
 	public void compassSetGetTest() {

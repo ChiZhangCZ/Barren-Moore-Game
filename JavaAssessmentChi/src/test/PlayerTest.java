@@ -7,7 +7,7 @@ import org.junit.Test;
 import assessment.Compass;
 import assessment.Player;
 
-public class Playertest {
+public class PlayerTest {
 	
 	@Test
 	public void lookingTest() {

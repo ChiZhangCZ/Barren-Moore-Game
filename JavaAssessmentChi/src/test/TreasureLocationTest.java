@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import assessment.Treasurelocation;
 
-public class Treasurelocationtest {
+public class TreasureLocationTest {
 	
 	@Test
 	public void treasureTest() {
